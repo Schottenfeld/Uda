@@ -1,0 +1,4 @@
+grant {
+        // Unbeschränkter Zugriff
+        permission java.security.AllPermission;
+};
