@@ -1,6 +1,7 @@
 package UDAServer;
 
 import java.rmi.*;
+import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
 
 // Implementation of the "first contact" interface; the rest is done by the thread-class.
@@ -60,6 +61,7 @@ public class UDAServerImpl extends UnicastRemoteObject implements ServerInterfac
 		System.setSecurityManager(new RMISecurityManager());
 		try
 		{
+			LocateRegistry.createRegistry(1099);
 			UDAServerImpl obj = new UDAServerImpl("UDAServer");
 			Naming.rebind("//localhost/UDAServer", obj);
 			System.out.println("UDAServer bound in registry");
