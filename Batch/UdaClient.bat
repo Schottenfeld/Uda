@@ -1,0 +1,1 @@
+C:\Windows\SysWOW64\java.exe -Djava.security.policy=D:\Test\JavaWS\JavaUdaOrig\batch\policy -cp D:\Test\JavaWS\JavaUdaOrig\classes\UDAClient.jar UDAClient.UDAClient

@@ -1,0 +1,1 @@
+java.exe -Djava.security.policy=D:\Test\JavaWS\JavaUdaOrig\batch\policy -cp D:\Test\JavaWS\JavaUdaOrig\classes\UDAAdmin.jar UDAAdmin.UDAAdmin
